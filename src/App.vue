@@ -84,7 +84,7 @@
     </section>
 
       <!-- Scroll Indicator -->
-      <div class="absolute inset-x-0 z-20 flex justify-center bottom-6 animate-bounce">
+      <div class="absolute inset-x-0 z-20 justify-center hidden md:flex bottom-6 animate-bounce">
         <div class="flex flex-col items-center gap-2">
           <span class="px-3 py-1 text-sm font-medium rounded-full text-blue-100/90 backdrop-blur-sm bg-white/10">
             Scroll to explore
@@ -96,7 +96,7 @@
   </div>
 
   <!-- Portfolio Section -->
-  <section id="portfolio" class="relative px-6 py-20 bg-gray-50 md:px-12">
+  <section id="portfolio" class="relative px-6 py-12 md:py-20 bg-gray-50 md:px-12">
     <div class="mx-auto max-w-screen-2xl">
       
       <!-- Section Header -->
@@ -160,40 +160,40 @@
     </div>
   </section>
 
-<!-- Tech Stack Section -->
-<section class="py-20 bg-white">
-  <div class="container px-6 mx-auto">
-    <div class="mb-16 text-center">
-      <h2 class="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
-        Technologies We Master
-      </h2>
-      <p class="max-w-2xl mx-auto text-lg text-gray-600">
-        Leveraging cutting-edge technologies to build robust, scalable solutions
-      </p>
-    </div>
+  <!-- Tech Stack Section -->
+  <section class="py-12 bg-white md:py-20">
+    <div class="container px-6 mx-auto">
+      <div class="mb-16 text-center">
+        <h2 class="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
+          Technologies We Master
+        </h2>
+        <p class="max-w-2xl mx-auto text-lg text-gray-600">
+          Leveraging cutting-edge technologies to build robust, scalable solutions
+        </p>
+      </div>
 
-    <div class="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
-      <div v-for="(tech, index) in technologies" :key="tech.name"
-        class="relative p-6 text-center transition-all duration-300 cursor-pointer group bg-gray-50 rounded-xl hover:shadow-xl hover:-translate-y-2"
-      >
-        <div
-          :class="[
-            'inline-flex items-center justify-center w-16 h-16 rounded-lg bg-gradient-to-br text-white mb-4 transform transition-transform group-hover:scale-110 group-hover:rotate-3',
-            tech.color
-          ]"
+      <div class="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+        <div v-for="(tech, index) in technologies" :key="tech.name"
+          class="relative p-6 text-center transition-all duration-300 cursor-pointer group bg-gray-50 rounded-xl hover:shadow-xl hover:-translate-y-2"
         >
-          <Icon :icon="tech.icon" class="w-8 h-8" />
+          <div
+            :class="[
+              'inline-flex items-center justify-center w-16 h-16 rounded-lg bg-gradient-to-br text-white mb-4 transform transition-transform group-hover:scale-110 group-hover:rotate-3',
+              tech.color
+            ]"
+          >
+            <Icon :icon="tech.icon" class="w-8 h-8" />
+          </div>
+          <h3 class="font-semibold text-gray-900 group-hover:text-[#1e7fca] transition-colors">
+            {{ tech.name }}
+          </h3>
         </div>
-        <h3 class="font-semibold text-gray-900 group-hover:text-[#1e7fca] transition-colors">
-          {{ tech.name }}
-        </h3>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- CTA Section -->
-  <section id="contact" class="py-20 bg-gradient-to-br from-[#1e7fca] to-[#0a4d8c] text-white relative overflow-hidden">
+  <section id="contact" class="py-14 md:py-20 bg-gradient-to-br from-[#1e7fca] to-[#0a4d8c] text-white relative overflow-hidden">
     <!-- Background Blurred Circles -->
     <div class="absolute inset-0 opacity-10">
       <div class="absolute w-64 h-64 bg-white rounded-full top-10 right-10 blur-3xl"></div>
