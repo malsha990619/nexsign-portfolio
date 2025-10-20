@@ -1,44 +1,14 @@
 <template>
   <!-- Hero Section -->
-  <div class="min-h-screen bg-gradient-to-br from-[#1e7fca] via-[#0a4d8c] to-[#1e7fca] w-full">
+  <div class="bg-gradient-to-br from-[#1e7fca] via-[#0a4d8c] to-[#1e7fca] w-full">
     <!-- Decorative Grid Pattern -->
     <div class="absolute inset-0">
       <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:24px_24px]"></div>
       <div class="absolute inset-0 bg-[radial-gradient(circle,#ffffff12_2px,transparent_0px)] bg-[size:128px_128px]"></div>
     </div>
       
-    <!-- Simple Header -->
-    <header  
-      :class="['fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-4 transition-all duration-300',
-          isScrolled 
-          ? 'bg-[#031c38]/65 backdrop-blur-md shadow-lg border-b border-transparent' 
-          : 'bg-transparent border-b border-white/0'
-      ]"
-    >
-      <div class="mt-1 md:mt-0">
-        <!-- Logo Image -->
-        <div class="flex items-center justify-center">
-          <img :src="foooterlogo" alt="Nexsign Global Logo" class="w-auto h-8 transition-all duration-300 md:h-8 lg:h-10"/>
-        </div>
-      </div>
-      
-      <a 
-        href="https://nexsignglobal.com" 
-        target="_blank"
-        :class="[
-          'text-[13px] md:text-[15px] px-4 py-1.5 md:px-6 md:py-2.5 mr-2 rounded-lg transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl group font-semibold',
-          isScrolled 
-            ? 'bg-white text-nexsign-600 hover:bg-gray-50 border border-gray-200' 
-            : 'bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 border border-white/30'
-        ]"
-      >
-        Visit Main Website
-        <ExternalLink class="w-4 h-4 transition-transform group-hover:translate-x-1" />
-      </a>
-    </header>
-
     <!-- Hero Section with Rich Content -->
-    <section class="relative min-h-[95vh] flex items-center justify-center overflow-hidden px-6 py-12">
+    <section class="relative min-h-[50vh] flex items-center justify-center overflow-hidden px-6 py-12">
       
       <!-- Animated Background Elements -->
       <div class="absolute inset-0 overflow-hidden">
@@ -59,56 +29,16 @@
           Web Development Portfolio
         </h2>
 
-        <!-- Rich Description -->
-        <div class="max-w-4xl mx-auto mb-12 space-y-6">
-          <p class="text-xl font-medium leading-relaxed text-white md:text-2xl drop-shadow-md">
-            We transform innovative ideas into powerful, scalable web solutions that drive real business growth and deliver exceptional user experiences.
-          </p>
-          
-          
-        </div>
-
-        <!-- CTA Buttons -->
-        <div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <button 
-            onclick="document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' })"
-            class="flex items-center gap-3 px-10 py-4 text-lg font-bold transition-all duration-300 bg-white shadow-2xl group text-nexsign-600 rounded-xl hover:bg-gray-50 hover:shadow-3xl hover:scale-105"
-          >
-            View Our Work
-            <ArrowRight class="w-5 h-5 transition-transform group-hover:translate-x-1" />
-          </button>
-        </div>
-
       </div>
 
     </section>
 
-      <!-- Scroll Indicator -->
-      <div class="absolute inset-x-0 z-20 justify-center hidden md:flex bottom-6 animate-bounce">
-        <div class="flex flex-col items-center gap-2">
-          <span class="px-3 py-1 text-sm font-medium rounded-full text-blue-100/90 backdrop-blur-sm bg-white/10">
-            Scroll to explore
-          </span>
-          <ChevronDown class="w-6 h-6 text-white/90 drop-shadow-lg" />
-        </div>
-      </div>
-
   </div>
 
   <!-- Portfolio Section -->
-  <section id="portfolio" class="relative px-6 py-12 md:py-20 bg-gray-50 md:px-12">
+  <section id="portfolio" class="relative px-6 py-12 bg-gray-50 md:px-12">
     <div class="mx-auto max-w-screen-2xl">
       
-      <!-- Section Header -->
-      <div class="mb-16 text-center">
-        <h2 class="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
-          Our Portfolio
-        </h2>
-        <p class="max-w-3xl mx-auto text-lg text-gray-600">
-          Explore our recent projects showcasing innovation, quality, and exceptional results
-        </p>
-      </div>
-
       <!-- Projects Grid -->
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         <div v-for="project in projects" 
@@ -157,84 +87,6 @@
         </div>
       </div>
 
-    </div>
-  </section>
-
-  <!-- Tech Stack Section -->
-  <section class="py-12 bg-white md:py-20">
-    <div class="container px-6 mx-auto">
-      <div class="mb-16 text-center">
-        <h2 class="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
-          Technologies We Master
-        </h2>
-        <p class="max-w-2xl mx-auto text-lg text-gray-600">
-          Leveraging cutting-edge technologies to build robust, scalable solutions
-        </p>
-      </div>
-
-      <div class="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
-        <div v-for="(tech, index) in technologies" :key="tech.name"
-          class="relative p-6 text-center transition-all duration-300 cursor-pointer group bg-gray-50 rounded-xl hover:shadow-xl hover:-translate-y-2"
-        >
-          <div
-            :class="[
-              'inline-flex items-center justify-center w-16 h-16 rounded-lg bg-gradient-to-br text-white mb-4 transform transition-transform group-hover:scale-110 group-hover:rotate-3',
-              tech.color
-            ]"
-          >
-            <Icon :icon="tech.icon" class="w-8 h-8" />
-          </div>
-          <h3 class="font-semibold text-gray-900 group-hover:text-[#1e7fca] transition-colors">
-            {{ tech.name }}
-          </h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section id="contact" class="py-14 md:py-20 bg-gradient-to-br from-[#1e7fca] to-[#0a4d8c] text-white relative overflow-hidden">
-    <!-- Background Blurred Circles -->
-    <div class="absolute inset-0 opacity-10">
-      <div class="absolute w-64 h-64 bg-white rounded-full top-10 right-10 blur-3xl"></div>
-      <div class="absolute bg-white rounded-full bottom-10 left-10 w-80 h-80 blur-3xl"></div>
-    </div>
-
-    <div class="container relative z-10 px-6 mx-auto text-center">
-      <h2 class="mb-6 text-4xl font-bold md:text-5xl">
-        Ready to Start Your Project?
-      </h2>
-      <p class="max-w-3xl mx-auto mb-12 text-xl text-blue-100 md:text-2xl">
-        Let's collaborate to bring your vision to life with innovative web solutions
-        that drive results and exceed expectations.
-      </p>
-
-      <div class="flex flex-col items-center justify-center gap-6 mb-8 sm:flex-row">
-        
-        <a 
-          href="https://nexsignglobal.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 bg-white text-[#1e7fca] px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group"
-        >
-          Visit Our Website
-          <ArrowRight :size="20" class="transition-transform group-hover:translate-x-1" />
-        </a>
-
-        <a
-          href="https://wa.me/94712143441?text=Hi%2C%20I%27m%20interested%20in%20your%20web%20development%20services"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-[#1e7fca] transition-all duration-300 transform hover:scale-105 group"
-        >
-          <MessageCircle :size="20" />
-          Chat on WhatsApp
-        </a>
-      </div>
-
-      <p class="text-lg text-blue-100">
-        <span class="font-semibold">Email:</span> infog@nexsignglobal.com
-      </p>
     </div>
   </section>
 
