@@ -91,11 +91,9 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-12 text-gray-300 bg-gray-900">
-    <div class="container px-6 mx-auto">
-      <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
-        
-        <!-- Company Info -->
+  <footer class="hidden py-12 text-gray-300 bg-gray-900 md:block">
+    <div class="flex flex-wrap w-full px-12 md:justify-between">
+      <!-- Company Info -->
         <div class="text-center md:text-left">
           <!-- Logo Image -->
           <img 
@@ -103,7 +101,7 @@
             alt="Nexsign Global Logo" 
             class="w-auto mb-3 h-11 md:mx-0"
           />
-          <p class="text-gray-400">Crafting Digital Excellence</p>
+          <p class="flex items-center gap-1 text-gray-400"><Mail :size="16" />infog@nexsignglobal.com</p>
           <a
             href="https://nexsignglobal.com"
             target="_blank"
@@ -144,15 +142,96 @@
           >
             <Instagram :size="24" />
           </a>
+          <a
+            href="https://tiktok.com/@nexsignglobal"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300 transform hover:scale-110"
+              aria-label="TikTok"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/>
+              </svg>
+          </a>
         </div>
-      </div>
-
-      <!-- Copyright -->
-      <div class="pt-8 mt-8 text-sm text-center text-gray-400 border-t border-gray-800">
-        <p>&copy; {{ currentYear }} Nexsign Global. All rights reserved.</p>
-      </div>
     </div>
   </footer>
+
+<!-- Mobile Footer (visible only on mobile) -->
+<footer class="block py-8 text-gray-300 bg-gray-900 md:hidden">
+  <div class="px-6">
+    <!-- Logo -->
+    <div class="flex justify-center mb-6">
+      <img 
+        :src="foooterlogo" 
+        alt="Nexsign Global Logo" 
+        class="h-auto w-36"
+      />
+    </div>
+
+    <!-- Contact Info -->
+    <div class="mb-6 space-y-3 text-center">
+      <a
+        href="mailto:infog@nexsignglobal.com"
+        class="flex items-center justify-center gap-2 text-sm text-gray-400 hover:text-[#3b9dff] transition-colors"
+      >
+        <Mail :size="16" />
+        infog@nexsignglobal.com
+      </a>
+      <a
+        href="https://nexsignglobal.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center justify-center gap-2 text-sm text-[#3b9dff] hover:text-[#1e7fca] transition-colors"
+      >
+        www.nexsignglobal.com
+        <ExternalLink :size="14" />
+      </a>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="flex items-center justify-center gap-4">
+      <a
+        href="https://linkedin.com/company/nexsignglobal"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300"
+        aria-label="LinkedIn"
+      >
+        <Linkedin :size="18" />
+      </a>
+      <a
+        href="https://facebook.com/nexsignglobal"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300"
+        aria-label="Facebook"
+      >
+        <Facebook :size="18" />
+      </a>
+      <a
+        href="https://instagram.com/nexsignglobal"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300"
+        aria-label="Instagram"
+      >
+        <Instagram :size="18" />
+      </a>
+      <a
+        href="https://tiktok.com/@nexsignglobal"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300"
+        aria-label="TikTok"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
 
 </template>
 
@@ -163,7 +242,7 @@ import {
   ArrowRight,
   ChevronDown,MessageCircle, Linkedin,
   Facebook,  
-  Instagram   
+  Instagram,Mail     
 } from 'lucide-vue-next'
 import { Icon } from '@iconify/vue'
 import logo from './assets/nexsign-logo.png' 
