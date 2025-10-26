@@ -20,12 +20,12 @@
       <div class="relative z-10 max-w-6xl mx-auto text-center">
              
         <!-- Main Heading -->
-        <h1 class="mb-8 text-6xl font-bold leading-tight tracking-tight text-white md:text-8xl drop-shadow-lg">
+        <h1 class="mb-10 text-6xl font-bold leading-tight tracking-tight text-white md:text-[130px] drop-shadow-lg">
           Nexsign Global
         </h1>
         
         <!-- Tagline -->
-        <h2 class="mb-10 text-4xl font-bold leading-tight text-white md:text-5xl drop-shadow-lg">
+        <h2 class="mb-8 text-4xl font-bold leading-tight text-white md:text-5xl drop-shadow-lg">
           Web Development Portfolio
         </h2>
 
@@ -99,7 +99,7 @@
           <img 
             :src="foooterlogo" 
             alt="Nexsign Global Logo" 
-            class="w-auto mb-3 h-11 md:mx-0"
+            class="w-auto h-12 mb-3 md:mx-0"
           />
           <p class="flex items-center gap-1 text-gray-400"><Mail :size="16" />infog@nexsignglobal.com</p>
           <a
@@ -116,7 +116,7 @@
         <!-- Social Media Icons -->
         <div class="flex items-center gap-6">
           <a
-            href="https://linkedin.com/company/nexsignglobal"
+            href="https://www.linkedin.com/company/nexsignglobal/"
             target="_blank"
             rel="noopener noreferrer"
             class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300 transform hover:scale-110"
@@ -125,7 +125,7 @@
             <Linkedin :size="24" />
           </a>
           <a
-            href="https://github.com/nexsignglobal"
+            href="https://www.facebook.com/nexsignglobal"
             target="_blank"
             rel="noopener noreferrer"
             class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300 transform hover:scale-110"
@@ -134,7 +134,7 @@
             <Facebook :size="24" />
           </a>
           <a
-            href="https://twitter.com/nexsignglobal"
+            href="https://www.instagram.com/nexsignglobal/"
             target="_blank"
             rel="noopener noreferrer"
             class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300 transform hover:scale-110"
@@ -143,7 +143,7 @@
             <Instagram :size="24" />
           </a>
           <a
-            href="https://tiktok.com/@nexsignglobal"
+            href="https://www.tiktok.com/@nexsignglobal"
               target="_blank"
               rel="noopener noreferrer"
               class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300 transform hover:scale-110"
@@ -192,7 +192,7 @@
     <!-- Social Media Icons -->
     <div class="flex items-center justify-center gap-4">
       <a
-        href="https://linkedin.com/company/nexsignglobal"
+        href="https://www.linkedin.com/company/nexsignglobal/"
         target="_blank"
         rel="noopener noreferrer"
         class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300"
@@ -201,7 +201,7 @@
         <Linkedin :size="18" />
       </a>
       <a
-        href="https://facebook.com/nexsignglobal"
+        href="https://www.facebook.com/nexsignglobal"
         target="_blank"
         rel="noopener noreferrer"
         class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300"
@@ -210,7 +210,7 @@
         <Facebook :size="18" />
       </a>
       <a
-        href="https://instagram.com/nexsignglobal"
+        href="https://www.instagram.com/nexsignglobal/"
         target="_blank"
         rel="noopener noreferrer"
         class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300"
@@ -219,7 +219,7 @@
         <Instagram :size="18" />
       </a>
       <a
-        href="https://tiktok.com/@nexsignglobal"
+        href="https://www.tiktok.com/@nexsignglobal"
         target="_blank"
         rel="noopener noreferrer"
         class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300"
@@ -254,52 +254,148 @@ const isScrolled = ref(false)
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A full-featured online shopping platform with payment integration, inventory management, and customer reviews.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
-    technologies: ["React", "Node.js", "MySQL", "Stripe"],
-    link: "https://example.com/project1"
+    title: "Fastway",
+    description: "Fastway is an online store offering electronics, tools, and lifestyle products across Sri Lanka.",
+    image: `${import.meta.env.BASE_URL}project_images/1.PNG`,
+    technologies: ["Vue js", "Laravel", "MySQL", "Tailwind"],
+    link: "https://fastway.lk/"
   },
   {
     id: 2,
-    title: "Corporate Website",
-    description: "Professional corporate website with modern design, CMS integration, and multi-language support.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-    technologies: ["Vue.js", "Laravel", "Tailwind CSS"],
-    link: "https://example.com/project2"
+    title: "Royal Group",
+    description: "Royal Group manages hotels, rest houses, banquet halls & catering services across Colombo & Kandy.",
+    image: `${import.meta.env.BASE_URL}project_images/2.PNG`,
+    technologies: ["Wordpress"],
+    link: "https://royalgroup.lk/"
   },
   {
     id: 3,
-    title: "Real Estate Portal",
-    description: "Property listing platform with advanced search filters, virtual tours, and agent management system.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-    technologies: ["React", "PHP", "PostgreSQL"],
-    link: "https://example.com/project3"
+    title: "Dedicated Community Care",
+    description: "Dedicated Community Care is an NDIS service provider offering personalized support services in Melbourne.",
+    image: `${import.meta.env.BASE_URL}project_images/3.PNG`,
+    technologies: ["Wordpress"],
+    link: "https://dedicatedcommunitycare.com.au/"
   },
   {
     id: 4,
-    title: "Healthcare Management",
-    description: "Comprehensive healthcare system for patient scheduling, medical records, and telemedicine consultations.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop",
-    technologies: ["React", "Node.js", "MongoDB", "Socket.io"],
-    link: "https://example.com/project4"
+    title: "Flying Fish",
+    description: "Flying Fish offers boat tours for thrilling ocean safaris and unique experiences in the Maldivian seas.",
+    image: `${import.meta.env.BASE_URL}project_images/4.PNG`,
+    technologies: ["Vue js", "Laravel", "MySQL", "Tailwind"],
+    link: "https://flyingfish.mv/"
   },
   {
     id: 5,
-    title: "Learning Management System",
-    description: "Interactive online education platform with video streaming, assessments, and progress tracking.",
-    image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&h=600&fit=crop",
-    technologies: ["Vue.js", "Laravel", "MySQL", "AWS"],
-    link: "https://example.com/project5"
+    title: "Acland Property Services",
+    description: "Acland Property Services delivers high-quality craftsmanship and property maintenance across Melbourne.",
+    image: `${import.meta.env.BASE_URL}project_images/5.PNG`,
+    technologies: ["Vue js", "Laravel", "MySQL", "Tailwind"],
+    link: "https://www.aclandps.com.au/"
   },
   {
     id: 6,
-    title: "Restaurant Ordering System",
-    description: "Multi-restaurant food ordering app with real-time tracking, menu display, and integrated payment processing.",
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop",
-    technologies: ["React", "Node.js", "Tailwind CSS"],
-    link: "https://example.com/project6"
-  }
+    title: "The Vault Of Gems",
+    description: "D and D Trading L.L.C – FZ offers jewelry sales, custom designs, and gem auctions online.",
+    image: `${import.meta.env.BASE_URL}project_images/6.PNG`,
+    technologies: ["Vue js", "inertia js", "Laravel", "MySQL","Tailwind"],
+    link: "https://gem.nexsignglobal.com/"
+  },
+  {
+    id: 7,
+    title: "Dreamer Traveller",
+    description: "Dreamer Traveller crafts tailor-made tours across Sri Lanka to bring your travel dreams to life.",
+    image: `${import.meta.env.BASE_URL}project_images/7.PNG`,
+    technologies: ["Wordpress"],
+    link: "https://dreamertraveller.com/"
+  },
+  {
+    id: 8,
+    title: "TCH Care",
+    description: "TCH Care is a Melbourne-based NDIS service provider offering tailored disability supports and accommodations.",
+    image: `${import.meta.env.BASE_URL}project_images/8.PNG`,
+    technologies: ["Wordpress"],
+    link: "https://www.tchcare.com.au/"
+  },
+  {
+    id: 9,
+    title: "Markosvic Driving School",
+    description: "Markosvic Driving School offers expert driving lessons across Melbourne for confident drivers.",
+    image: `${import.meta.env.BASE_URL}project_images/9.PNG`,
+    technologies: ["Wordpress"],
+    link: "https://markosvicdrivingschool.com.au/"
+  },
+  {
+    id: 10,
+    title: "Stones & Metals",
+    description: "Stones & Metals offers fine jewelry collections with rings, earrings, and custom designs.",
+    image: `${import.meta.env.BASE_URL}project_images/10.PNG`,
+    technologies: ["Wordpress"],
+    link: "https://stone.brandsbyhiru.com/"
+  },
+  {
+    id: 11,
+    title: "TechView Computers",
+    description: "TechView Computers offers top-quality PCs, components and tech solutions in Sri Lanka.",
+    image: `${import.meta.env.BASE_URL}project_images/11.PNG`,
+    technologies: ["Wordpress"],
+    link: "https://techviewcomputers.lk/"
+  },
+  {
+    id: 12,
+    title: "Time Travellers",
+    description: "Time Travellers creates meaningful journeys beyond tourism, celebrating Sri Lanka’s culture and traditions.",
+    image: `${import.meta.env.BASE_URL}project_images/12.PNG`,
+    technologies: ["Vue js", "Laravel", "MySQL","Tailwind"],
+    link: "https://timetravellers.biz/"
+  },
+  {
+    id: 13,
+    title: "ISORUS",
+    description: "ISORUS offers expert ISO consulting services across Australia, guiding businesses to certification success.",
+    image: `${import.meta.env.BASE_URL}project_images/13.PNG`,
+    technologies: ["Wordpress"],
+    link: "https://isorus.com.au/"
+  },
+  {
+    id: 14,
+    title: "Live Lanka Tours",
+    description: "Live Lanka Tours offers personalized journeys highlighting Sri Lanka’s natural beauty and culture.",
+    image: `${import.meta.env.BASE_URL}project_images/14.PNG`,
+    technologies: ["Wordpress"],
+    link: "https://livelankatours.com/"
+  },
+  {
+    id: 15,
+    title: "Infonet Lanka",
+    description: "Infonet Lanka is your trusted IT partner, delivering high-quality products, expert repair services, and IT training programs.",
+    image: `${import.meta.env.BASE_URL}project_images/15.PNG`,
+    technologies: ["Wordpress"],
+    link: "https://infonetlanka.com/"
+  },
+  {
+    id: 16,
+    title: "Wood Haven",
+    description: "Wood Haven supplies quality timber, plywood, and foam boards with cutting and delivery services.",
+    image: `${import.meta.env.BASE_URL}project_images/16.PNG`,
+    technologies: ["Vue js", "Laravel", "MySQL","Tailwind"],
+    link: "https://woodhaven.mv/"
+  },
+  {
+    id: 17,
+    title: "Lipton View",
+    description: "Lipton View offers personalized luxury accommodations and exceptional services for unforgettable stays.",
+    image: `${import.meta.env.BASE_URL}project_images/17.PNG`,
+    technologies: ["Vue js", "inertia js", "Laravel", "MySQL","Tailwind"],
+    link: "https://lipton.nexsignglobal.com/"
+  },
+  {
+    id: 18,
+    title: "Premium Shipping",
+    description: "Premium Shipping delivers fast and affordable shipping solutions across Sri Lanka.",
+    image: `${import.meta.env.BASE_URL}project_images/18.PNG`,
+    technologies: ["Wordpress"],
+    link: "https://premiumshipping.lk/"
+  },
 ]
 
 // Technologies data with Iconify icon names
