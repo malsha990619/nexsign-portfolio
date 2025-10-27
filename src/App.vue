@@ -25,11 +25,11 @@
         </h1> -->
         
         <!-- Tagline -->
-        <h1 class="mb-8 text-5xl font-bold leading-tight text-white md:text-7xl drop-shadow-lg">
+        <h1 class="mb-8 text-4xl font-bold leading-tight text-white md:text-7xl drop-shadow-lg">
           Web Development Portfolio
         </h1>
         
-        <p class="max-w-3xl mx-auto text-lg leading-relaxed text-white/90 md:text-[20px] 2xl:text-xl drop-shadow">
+        <p class="max-w-3xl ytext mx-auto text-[16px] leading-relaxed text-white/90 md:text-[20px] 2xl:text-xl drop-shadow">
           Crafting modern, responsive, and user-friendly web applications with cutting-edge technologies.
           Transforming ideas into seamless digital experiences that drive results.
           Let's build something exceptional together.
@@ -244,7 +244,7 @@
 
   <!-- whatsapp icon -->
   <a href="https://wa.me/94701728259" target="_blank" rel="noopener noreferrer"
-    class="fixed bottom-7 right-6 bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#20BA5A] transition-all duration-300 hover:scale-110 z-50"
+    class="fixed right-3 bottom-7 lg:right-6 bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#20BA5A] transition-all duration-300 hover:scale-110 z-50"
     aria-label="Chat on WhatsApp"
   >
     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
