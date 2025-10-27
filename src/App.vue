@@ -1,33 +1,33 @@
 <template>
   <!-- Hero Section -->
-  <div class="bg-gradient-to-br from-[#1e7fca] via-[#0a4d8c] to-[#1e7fca] w-full">
+  <div class="bg-gradient-to-b from-[#2d6ba3] via-[#1565a8] to-[#0a4a7a]">
     <!-- Decorative Grid Pattern -->
-    <div class="absolute inset-0">
+    <!-- <div class="absolute inset-0">
       <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:24px_24px]"></div>
       <div class="absolute inset-0 bg-[radial-gradient(circle,#ffffff12_2px,transparent_0px)] bg-[size:128px_128px]"></div>
-    </div>
+    </div> -->
       
     <!-- Hero Section with Rich Content -->
     <section class="relative min-h-[50vh] flex items-center justify-center overflow-hidden px-6 py-12">
       
       <!-- Animated Background Elements -->
-      <div class="absolute inset-0 overflow-hidden">
+      <!-- <div class="absolute inset-0 overflow-hidden">
         <div class="absolute rounded-full top-20 left-10 w-96 h-96 bg-white/10 blur-3xl animate-pulse"></div>
         <div class="absolute bottom-20 right-10 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl animate-pulse" style="animation-delay: 700ms;"></div>
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-300/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1400ms;"></div>
-      </div>
+      </div> -->
 
       <div class="relative z-10 max-w-6xl mx-auto text-center">
              
         <!-- Main Heading -->
-        <h1 class="mb-10 text-6xl font-bold leading-tight tracking-tight text-white md:text-[130px] drop-shadow-lg">
+        <!-- <h1 class="mb-10 text-6xl font-bold leading-tight tracking-tight text-white md:text-[120px] drop-shadow-lg">
           Nexsign Global
-        </h1>
+        </h1> -->
         
         <!-- Tagline -->
-        <h2 class="mb-8 text-4xl font-bold leading-tight text-white md:text-5xl drop-shadow-lg">
+        <h1 class="mb-8 text-5xl font-bold leading-tight text-white md:text-7xl drop-shadow-lg">
           Web Development Portfolio
-        </h2>
+        </h1>
 
       </div>
 
@@ -43,14 +43,14 @@
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         <div v-for="project in projects" 
           :key="project.id"
-          class="overflow-hidden transition-all duration-500 bg-white border border-gray-100 shadow-lg group rounded-2xl hover:shadow-2xl hover:-translate-y-2"
+          class="overflow-hidden transition-all duration-500 bg-white border border-gray-100 rounded-sm shadow-lg group hover:shadow-2xl hover:-translate-y-2"
         >
           <!-- Project Image -->
-          <div class="relative overflow-hidden aspect-video">
+          <div class="relative p-2 overflow-hidden aspect-video">
             <img 
               :src="project.image" 
               :alt="project.title"
-              class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+              class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
             />
           </div>
           
@@ -91,16 +91,19 @@
   </section>
 
   <!-- Footer -->
-  <footer class="hidden py-12 text-gray-300 bg-gray-900 md:block">
-    <div class="flex flex-wrap w-full px-12 md:justify-between">
+  <footer class="hidden py-6 text-gray-300 bg-[#051D37] md:block">
+    <div class="container flex flex-wrap w-full px-12 mx-auto md:justify-between">
       <!-- Company Info -->
         <div class="text-center md:text-left">
           <!-- Logo Image -->
           <img 
             :src="foooterlogo" 
             alt="Nexsign Global Logo" 
-            class="w-auto h-12 mb-3 md:mx-0"
+            class="w-auto h-12 mt-1 md:mx-0"
           />
+        </div>
+
+        <div>
           <p class="flex items-center gap-1 text-gray-400"><Mail :size="16" />infog@nexsignglobal.com</p>
           <a
             href="https://nexsignglobal.com"
@@ -119,7 +122,7 @@
             href="https://www.linkedin.com/company/nexsignglobal/"
             target="_blank"
             rel="noopener noreferrer"
-            class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300 transform hover:scale-110"
+            class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300 transform hover:scale-110"
             aria-label="LinkedIn"
           >
             <Linkedin :size="24" />
@@ -128,7 +131,7 @@
             href="https://www.facebook.com/nexsignglobal"
             target="_blank"
             rel="noopener noreferrer"
-            class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300 transform hover:scale-110"
+            class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300 transform hover:scale-110"
             aria-label="GitHub"
           >
             <Facebook :size="24" />
@@ -137,7 +140,7 @@
             href="https://www.instagram.com/nexsignglobal/"
             target="_blank"
             rel="noopener noreferrer"
-            class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300 transform hover:scale-110"
+            class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300 transform hover:scale-110"
             aria-label="Twitter"
           >
             <Instagram :size="24" />
@@ -146,7 +149,7 @@
             href="https://www.tiktok.com/@nexsignglobal"
               target="_blank"
               rel="noopener noreferrer"
-              class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300 transform hover:scale-110"
+              class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300 transform hover:scale-110"
               aria-label="TikTok"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -157,81 +160,81 @@
     </div>
   </footer>
 
-<!-- Mobile Footer (visible only on mobile) -->
-<footer class="block py-8 text-gray-300 bg-gray-900 md:hidden">
-  <div class="px-6">
-    <!-- Logo -->
-    <div class="flex justify-center mb-6">
-      <img 
-        :src="foooterlogo" 
-        alt="Nexsign Global Logo" 
-        class="h-auto w-36"
-      />
-    </div>
+  <!-- Mobile Footer (visible only on mobile) -->
+  <footer class="block py-8 text-gray-300 bg-[#051D37] md:hidden">
+    <div class="px-6">
+      <!-- Logo -->
+      <div class="flex justify-center mb-6">
+        <img 
+          :src="foooterlogo" 
+          alt="Nexsign Global Logo" 
+          class="h-auto w-36"
+        />
+      </div>
 
-    <!-- Contact Info -->
-    <div class="mb-6 space-y-3 text-center">
-      <a
-        href="mailto:infog@nexsignglobal.com"
-        class="flex items-center justify-center gap-2 text-sm text-gray-400 hover:text-[#3b9dff] transition-colors"
-      >
-        <Mail :size="16" />
-        infog@nexsignglobal.com
-      </a>
-      <a
-        href="https://nexsignglobal.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="flex items-center justify-center gap-2 text-sm text-[#3b9dff] hover:text-[#1e7fca] transition-colors"
-      >
-        www.nexsignglobal.com
-        <ExternalLink :size="14" />
-      </a>
-    </div>
+      <!-- Contact Info -->
+      <div class="mb-6 space-y-3 text-center">
+        <a
+          href="mailto:infog@nexsignglobal.com"
+          class="flex items-center justify-center gap-2 text-sm text-gray-400 hover:text-[#3b9dff] transition-colors"
+        >
+          <Mail :size="16" />
+          infog@nexsignglobal.com
+        </a>
+        <a
+          href="https://nexsignglobal.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-center gap-2 text-sm text-[#3b9dff] hover:text-[#1e7fca] transition-colors"
+        >
+          www.nexsignglobal.com
+          <ExternalLink :size="14" />
+        </a>
+      </div>
 
-    <!-- Social Media Icons -->
-    <div class="flex items-center justify-center gap-4">
-      <a
-        href="https://www.linkedin.com/company/nexsignglobal/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300"
-        aria-label="LinkedIn"
-      >
-        <Linkedin :size="18" />
-      </a>
-      <a
-        href="https://www.facebook.com/nexsignglobal"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300"
-        aria-label="Facebook"
-      >
-        <Facebook :size="18" />
-      </a>
-      <a
-        href="https://www.instagram.com/nexsignglobal/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300"
-        aria-label="Instagram"
-      >
-        <Instagram :size="18" />
-      </a>
-      <a
-        href="https://www.tiktok.com/@nexsignglobal"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300"
-        aria-label="TikTok"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/>
-        </svg>
-      </a>
+      <!-- Social Media Icons -->
+      <div class="flex items-center justify-center gap-4">
+        <a
+          href="https://www.linkedin.com/company/nexsignglobal/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300"
+          aria-label="LinkedIn"
+        >
+          <Linkedin :size="18" />
+        </a>
+        <a
+          href="https://www.facebook.com/nexsignglobal"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300"
+          aria-label="Facebook"
+        >
+          <Facebook :size="18" />
+        </a>
+        <a
+          href="https://www.instagram.com/nexsignglobal/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300"
+          aria-label="Instagram"
+        >
+          <Instagram :size="18" />
+        </a>
+        <a
+          href="https://www.tiktok.com/@nexsignglobal"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#1e7fca] transition-all duration-300"
+          aria-label="TikTok"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/>
+          </svg>
+        </a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </template>
 
