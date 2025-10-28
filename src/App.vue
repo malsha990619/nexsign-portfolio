@@ -17,7 +17,7 @@
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-300/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1400ms;"></div>
       </div> -->
 
-      <div class="relative z-10 max-w-6xl mx-auto text-center">
+      <div class="relative z-10 max-w-6xl mx-auto text-center 2xl:max-w-7xl">
              
         <!-- Main Heading -->
         <!-- <h1 class="mb-10 text-6xl font-bold leading-tight tracking-tight text-white md:text-[120px] drop-shadow-lg">
@@ -25,8 +25,8 @@
         </h1> -->
         
         <!-- Tagline -->
-        <h1 class="mb-8 text-4xl font-bold leading-tight text-white md:text-7xl drop-shadow-lg">
-          Web Development Portfolio
+        <h1 class="mb-8 text-3xl font-bold leading-tight text-white md:text-5xl 2xl:text-6xl drop-shadow-lg">
+          Nexsign Global Web Development Portfolio
         </h1>
         
         <p class="max-w-3xl ytext mx-auto text-[16px] leading-relaxed text-white/90 md:text-[20px] 2xl:text-xl drop-shadow">
@@ -52,7 +52,7 @@
           class="overflow-hidden transition-all duration-500 bg-white border border-gray-100 rounded-sm shadow-lg group hover:shadow-2xl hover:-translate-y-2"
         >
           <!-- Project Image -->
-          <div class="relative p-2 overflow-hidden aspect-video">
+          <div class="relative p-2 overflow-hidden">
             <img 
               :src="project.image" 
               :alt="project.title"
@@ -110,12 +110,12 @@
         </div>
 
         <div>
-          <p class="flex items-center gap-1 text-gray-400"><Mail :size="16" />infog@nexsignglobal.com</p>
+          <p class="flex items-center gap-1 text-gray-400"><Mail :size="16" />info@nexsignglobal.com</p>
           <a
             href="https://nexsignglobal.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 text-[#3b9dff] hover:text-[#1e7fca] transition-colors mt-2"
+            class="inline-flex items-center gap-2 text-[#3b9dff] hover:text-[#1e7fca] transition-colors mt-"
           >
             www.nexsignglobal.com
             <ExternalLink :size="16" />
