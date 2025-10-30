@@ -25,14 +25,12 @@
         </h1> -->
         
         <!-- Tagline -->
-        <h1 class="mb-8 text-3xl font-bold leading-tight text-white md:text-5xl 2xl:text-6xl drop-shadow-lg">
-          Nexsign Global Web Development Portfolio
+        <h1 class="mb-8 text-3xl font-bold leading-tight text-white md:text-6xl 2xl:text-7xl drop-shadow-lg">
+          Nexsign Web Development Portfolio
         </h1>
         
-        <p class="max-w-3xl ytext mx-auto text-[16px] leading-relaxed text-white/90 md:text-[20px] 2xl:text-xl drop-shadow">
-          Crafting modern, responsive, and user-friendly web applications with cutting-edge technologies.
-          Transforming ideas into seamless digital experiences that drive results.
-          Let's build something exceptional together.
+        <p class="max-w-4xl ytext mx-auto text-[16px] leading-relaxed text-white/90 md:text-[20px] 2xl:text-xl drop-shadow">
+          Nexsign Global (Pvt) Ltd is a trusted web development partner with years of experience creating responsive, visually captivating, and conversion-focused websites for clients across diverse industries. We specialize in crafting tailored digital platforms that deliver measurable results for both global and local clients, helping businesses enhance their online presence and achieve their goals through innovative web solutions.
         </p>
 
       </div>
