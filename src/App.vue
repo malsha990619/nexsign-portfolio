@@ -242,7 +242,7 @@
 
   <!-- whatsapp icon -->
   <a href="https://wa.me/94701728259" target="_blank" rel="noopener noreferrer"
-    class="fixed right-3 bottom-7 lg:bottom-20 2xl:bottom-7 lg:right-6 bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#20BA5A] transition-all duration-300 hover:scale-110 z-50"
+    class="fixed right-3 bottom-7 md:bottom-7 lg:bottom-20 xl:bottom-20 2xl:bottom-20 lg:right-6 bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#20BA5A] transition-all duration-300 hover:scale-110 z-50"
     aria-label="Chat on WhatsApp"
   >
     <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
